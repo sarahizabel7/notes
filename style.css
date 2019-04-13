@@ -1,0 +1,123 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+.header {
+	padding: 0.5em;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	margin-top: 1em;
+}
+
+.card {
+	width: 80%;
+	border: 1px solid gray;
+	margin: 1em;
+	min-height: 200px;
+	position: relative;
+}
+
+.input {
+	background-color: #fff;
+	flex: 5;
+	max-height: 37px !important;
+	min-width: 150px;
+}
+
+.select {
+	flex: 1;
+	width: 5em;
+	background-color: #fff;
+	min-width: 90px;
+}
+
+.default-style-header {
+	height: 37px;
+	font-size: 1.25rem;
+	border-radius: 4px;
+	margin-left: 10px;
+	width: 100%;
+	color: #363636;
+	padding-left: 0.5em;
+	align-items: center;
+	box-shadow: 0 0 0 0.1em rgba(50, 115, 225, 0.4);
+	border: 1px transparent;
+	margin-top: 5px;
+}
+
+.button {
+	min-width: 90px;
+	height: 37px;
+	flex: 1;
+	text-align: center;
+	background: #3498db;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+	.content {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.content {
+		grid-template-columns: 100%;
+	}
+}
+
+.red {
+	background-color: #ffb3b3;
+}
+.green {
+	background-color: #99ff99;
+}
+.yellow {
+	background-color: #ffff66;
+}
+.blue {
+	background-color: #b3d1ff;
+}
+
+.action-button:hover {
+	cursor: pointer;
+	color: black;
+}
+
+.action-button {
+	background-color: transparent;
+	margin: 0 3px;
+	color: gray;
+}
+
+.actions {
+	padding: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.card-paragraph {
+	word-wrap: break-word;
+	margin: 25px 5px 5px 5px;
+}
